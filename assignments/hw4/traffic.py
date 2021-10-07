@@ -25,4 +25,6 @@ def main():
     print("Total number of vehicles traveled on all roads: ", (acc + terms) - 15)
     print("Average number of vehicles per road: ", round(((acc/terms) - 4), 2))
 
-main()
+
+if __name__ == '__main__':
+    main()
