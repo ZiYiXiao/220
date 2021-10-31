@@ -1,0 +1,1 @@
+("Lucky Peyton Davidson's average:", 18.3, "\nBriana Flaherty's average:", 62, '\nClass average:', 40.15)
