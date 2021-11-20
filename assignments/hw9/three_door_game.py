@@ -1,3 +1,14 @@
+"""
+Name: Zi Yi Xiao
+three_door_game.py
+
+Problem: This program writes a function for the game "Three Door Game".
+
+Certification of Authenticity:
+I certify that this assignment is my own work, but I got help from the internet (homeworklib.com)
+to complete this program.
+"""
+
 import random
 from graphics import GraphWin, Rectangle, Point, Text
 from button import Button
@@ -32,33 +43,45 @@ def main():
         if door1 == ans and door1.is_clicked(pt) == True:
             door1.color_button("green")
             door1.set_label("green")
-            Text(Point(5, 8), "You win!")
-            Text(Point(5, 2), "Click to close")
+            text1 = Text(Point(5, 8), "You win!")
+            text2 = Text(Point(5, 2), "Click to close")
+            text1.draw(win)
+            text2.draw(win)
         else:
             door1.color_button("red")
             door1.set_label("red")
-            Text(Point(5, 8), "You lose!")
-            Text(Point(5, 2), "{ans} is my secret door")
+            text1 = Text(Point(5, 8), "You lose!")
+            text2 = Text(Point(5, 2), "{ans} is my secret door")
+            text1.draw(win)
+            text2.draw(win)
         if door2 == ans and door2.is_clicked(pt) == True:
             door2.color_button("green")
             door2.set_label("green")
-            Text(Point(5, 8), "You win!")
-            Text(Point(5, 2), "Click to close")
+            text1 = Text(Point(5, 8), "You win!")
+            text2 = Text(Point(5, 2), "Click to close")
+            text1.draw(win)
+            text2.draw(win)
         else:
             door2.color_button("red")
             door2.set_label("red")
-            Text(Point(5, 8), "You lose!")
-            Text(Point(5, 2), "{ans} is my secret door")
+            text1 = Text(Point(5, 8), "You lose!")
+            text2 = Text(Point(5, 2), "{ans} is my secret door")
+            text1.draw(win)
+            text2.draw(win)
         if door3 == ans and door3.is_clicked(pt) == True:
             door3.color_button("green")
             door3.set_label("green")
-            Text(Point(5, 8), "You win!")
-            Text(Point(5, 2), "Click to close")
+            text1 = Text(Point(5, 8), "You win!")
+            text2 = Text(Point(5, 2), "Click to close")
+            text1.draw(win)
+            text2.draw(win)
         else:
             door3.color_button("red")
             door3.set_label("red")
-            Text(Point(5, 2), "You lose!")
-            Text(Point(5, 8), "{ans} is my secret door")
+            text1 = Text(Point(5, 8), "You lose!")
+            text2 = Text(Point(5, 2), "{ans} is my secret door")
+            text1.draw(win)
+            text2.draw(win)
         pt = win.getMouse()
 
     draw_button.undraw()

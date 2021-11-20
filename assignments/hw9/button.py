@@ -1,3 +1,13 @@
+"""
+Name: Zi Yi Xiao
+button.py
+
+Problem: This program encapsulates data for a button shown in GUI.
+
+Certification of Authenticity:
+I certify that this assignment is entirely my own work.
+"""
+
 from graphics import GraphWin, Rectangle, Point, Text
 
 
